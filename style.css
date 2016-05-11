@@ -40,16 +40,42 @@ a {
 	top: 40%;
 	text-align: center;
 }
+#d2ddetail {
+	width: 73px;
+	height: 122.75px;
+	margin: auto;
+}
 #github {
+	width: 250px;
+	height: 102.5px;
+	margin: auto;
+}
+
+.break {
+	width: 300px;
+	height: 1px;
+	background-color: #F8F8F8;
+	margin: auto;
+	margin-top: 10px;
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 10%, rgba(0,0,0,0.97) 12%, rgba(0,0,0,0) 75%);
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 10%,rgba(0,0,0,0.97) 12%,rgba(0,0,0,0) 75%);
+	background: radial-gradient(ellipse at center,  rgba(0,0,0,1) 10%,rgba(0,0,0,0.97) 12%,rgba(0,0,0,0) 75%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+}
+
+#PROJECTS {
 	width: 500px;
-	height: 205px;
+	height: 400px;
 	position: fixed;
+	text-align: center;
 	margin: auto;
 	top: 0; left: 0; bottom: 0; right: 0;
+	font-size: 48px;
+	color: #161616;
 }
 #INFO {
 	width: 500px;
-	height: 400px;
+	height: 350px;
 	position: fixed;
 	text-align: center;
 	margin: auto;

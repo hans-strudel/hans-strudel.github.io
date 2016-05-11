@@ -15,7 +15,7 @@ function transfer(to){
 	if (LANDED) {
 		document.getElementById("bg").style.top = "-200%";
 		document.getElementById("bg").style.opacity = 0;
-		document.getElementById("circ").style.border = 0;
+		document.getElementById("circ").style.border = '0px';
 		document.getElementById("circ").style.top = "70%";
 		LANDED = false;
 		} else {
@@ -24,7 +24,7 @@ function transfer(to){
 			}
 		}
 		to.toElement.style.color = "#161616";
-		elem = String(to.target.text);
+		var elem = String(to.target.text);
 	document.getElementById('PROJECTS').style.display = 'none';
 	document.getElementById('INFO').style.display = 'none';
 	document.getElementById('CONTACT').style.display = 'none';
