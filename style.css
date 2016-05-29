@@ -19,25 +19,27 @@ a {
 	color: #727272;
 }
 #circ {
+	
 	margin: auto;
 	position: fixed;
 	top: 0; left: 0; bottom: 0; right: 0;
-	width: 300px;
-	height: 300px;
+	width: 350px;
+	height: 350px;
 	text-align: center;
 	border-radius: 200px;
 	background-color: #F8F8F8;
 	border: 5px solid black;
 	-webkit-transition: opacity 1s, top 1s;
     transition: opacity 1s, top 1s;
+	display: flex;
 }
 #links {
+
 	position: relative;
 	width: 90%;
 	left: 0;
 	right: 0;
 	margin: auto;
-	top: 40%;
 	text-align: center;
 }
 #d2ddetail {
@@ -49,6 +51,12 @@ a {
 	width: 250px;
 	height: 102.5px;
 	margin: auto;
+}
+#npm {
+	width: 144px;
+	height: 55.65px;
+	margin: auto;
+	margin-top: 25px;
 }
 
 .break {
@@ -72,6 +80,8 @@ a {
 	top: 0; left: 0; bottom: 0; right: 0;
 	font-size: 48px;
 	color: #161616;
+	-webkit-transition: top 1s, opacity 2s;
+    transition: top 1s, opacity 2s;
 }
 #INFO {
 	width: 500px;
@@ -92,4 +102,6 @@ a {
 	top: 0; left: 0; bottom: 0; right: 0;
 	font-size: 48px;
 	color: #161616;
+		-webkit-transition: top 1s, opacity 2s;
+    transition: top 1s, opacity 2s;
 }

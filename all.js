@@ -25,11 +25,17 @@ function transfer(to){
 		}
 		to.toElement.style.color = "#161616";
 		var elem = String(to.target.text);
-	document.getElementById('PROJECTS').style.display = 'none';
-	document.getElementById('INFO').style.display = 'none';
-	document.getElementById('CONTACT').style.display = 'none';
-	document.getElementById(elem).style.display = 'inline';
-	console.log(elem);
+		document.getElementById('PROJECTS').style.opacity = 0;
+		document.getElementById('PROJECTS').style.display = 'none';
+		document.getElementById('INFO').style.opacity = 0;
+		document.getElementById('INFO').style.display = 'none';
+		document.getElementById('CONTACT').style.opacity = 0;
+		document.getElementById('CONTACT').style.display = 'none';
+		
+		document.getElementById(elem).style.display = 'inline-block';
+		document.getElementById(elem).style.opacity = '1';
+		console.log(elem);
+
 	
 }
 
