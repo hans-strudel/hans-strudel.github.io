@@ -11,8 +11,8 @@ html {
 	background-image: url(logo.png);
 	background-repeat: repeat;
 	opacity: .7;
-	-webkit-transition: top 1s, opacity .5s;
-    transition: top 1s, opacity .5s;
+	-webkit-transition: top 1s, opacity .5s, background 1s;
+    transition: top 1s, opacity .5s, background 1s;
 }
 a {
 	text-decoration: none;

@@ -14,6 +14,8 @@ function init(){
 			bgColor = '#FFFFC2';
 		} else if (scrollTotal < 1500 && scrollTotal > 500){
 			bgColor = '#C2FFFF';
+		} else if (scrollTotal < -500 && scrollTotal > -1500){
+			bgColor = '#FFC2FF';
 		}
 		
 		document.getElementById('bg').style.backgroundColor = bgColor;
