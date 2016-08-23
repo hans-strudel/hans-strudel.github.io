@@ -1,4 +1,5 @@
 LANDED = true;
+var scrollTotal = 0;
 
 function init(){
 	
@@ -7,6 +8,16 @@ function init(){
 	document.getElementsByTagName("a")[0].addEventListener('click', transfer, false);
 	document.getElementsByTagName("a")[1].addEventListener('click', transfer, false);
 	document.getElementsByTagName("a")[2].addEventListener('click', transfer, false);
+	document.onmousewheel = function(e){
+		scrollTotal += e.deltaY;
+		if (scrollTotal <= 500 && scrollTotal >= -500){
+			bgColor = '#FFFFC2';
+		} else if (scrollTotal < 1500 && scrollTotal > 500){
+			bgColor = '#C2FFFF';
+		}
+		
+		document.getElementById('bg').style.backgroundColor = bgColor;
+	}
 
 }
 function transfer(to){
