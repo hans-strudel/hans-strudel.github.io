@@ -8,16 +8,22 @@ function init(){
 	document.getElementsByTagName("a")[0].addEventListener('click', transfer, false);
 	document.getElementsByTagName("a")[1].addEventListener('click', transfer, false);
 	document.getElementsByTagName("a")[2].addEventListener('click', transfer, false);
+    
+    scrollTotal = Math.floor(Math.random()*10000);
+    document.getElementById('bg').style.backgroundColor = newColor(scrollTotal);
+    
 	document.onmousewheel = function(e){
 		scrollTotal += e.deltaY;
-		if (scrollTotal <= 500 && scrollTotal >= -500){
+		/* if (scrollTotal <= 500 && scrollTotal >= -500){
 			bgColor = '#FFFFC2';
 		} else if (scrollTotal < 1500 && scrollTotal > 500){
 			bgColor = '#C2FFFF';
 		} else if (scrollTotal < -500 && scrollTotal > -1500){
 			bgColor = '#FFC2FF';
-		}
-		
+		} */
+        
+        bgColor = newColor(scrollTotal);
+        
 		document.getElementById('bg').style.backgroundColor = bgColor;
 	}
 
@@ -50,6 +56,15 @@ function transfer(to){
 		console.log(elem);
 
 	
+}
+
+function seedRandom(seed){
+    var s = Math.sin(seed) * 10000;
+    return s - Math.floor(s);
+}
+
+function newColor(delta){
+    return '#' + Math.floor(seedRandom(delta) * 0xffffff).toString(16);
 }
 
 document.addEventListener("DOMContentLoaded", init, false );
